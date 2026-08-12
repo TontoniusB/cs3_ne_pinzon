@@ -1,7 +1,6 @@
 def calculate_checkout(cart_total, shipping_speed):
     shipping_cost = 0
-    cart_total = float(cart_total)
-    cart_total = float("how much are you spending?")
+    cart_total = (input("how much are you spending?: "))  
     if shipping_speed == "express":
         shipping_cost = 20
     elif shipping_speed == "overnight":
@@ -15,4 +14,4 @@ def calculate_checkout(cart_total, shipping_speed):
         print("You can't do that.")
     return shipping_cost + cart_total
 
-print(calculate_checkout(10000, "standard"))
+print(calculate_checkout(10000,"express"))
